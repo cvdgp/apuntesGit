@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
+<meta charset="UTF-8">
+
 <head>
  <meta charset="utf-8">
 
@@ -83,9 +85,35 @@
       Podemos incluir uno o varios archivo en nuestro repositorio. Utilizaremos el comando <strong>git add "nombreArchivo.html" </strong> realizando un git add por cada archivo o realizar un <strong>git add *</strong> con lo que incluiríamos todos los archivos.
     </p>
   </article>
+  <article>
+    <h2>Cargar modificaciones en nuestro repositorio</h2>
+    <p> Cada vez q deseamos cargar una modificacion en nuestro repositorio realizaremos un commit en nuestro caso deseamaos hacerlo dejando un mensaje con las modificaciones por lo que haremos lo siguiente <strong>git commit -m "mesnsaje de modificaciones"</strong></p>
+  </article>
    <article>
    	<h2>¿Como podemos consultar histórico de commits realizados?</h2>
    	<p>Cuando deseemos consultar los diferentes commits realizados sobre un repositorio utilizaremos el comando <strong>git log</strong> . </p>
+   </article>
+   <article>
+     <h2>Cómo cargar mis archivos en GitHub</h2>
+
+     <ol>
+            <p>Si queremos trabajar en remoto una de las primera cosas que tenemos que apernder es a suvir archivos a un repositoria aljado en GITHUB</p>
+     <li> Para ellos primero crearemos un repositorio en nuestra propia carpeta, si no lo tenemos creado previamoente claro <br>
+    </claro><strong>git init</strong></li>
+     <li>Luego crearemos un repositorio en github</li>
+     <li>Añado respositorio de gitHub web  <br>
+       <strong>git remote add origin https:// ......./.git</strong></li>
+     <li>Miramos los archivos que tiene suvidos con <br>
+      <strong>git status</strong></li>
+      <li>Añadiremos los archivos deseados en mi caso todos <br>
+      <strong>git add *</strong></li>
+      <li>Ahora cargo el commit <br>
+      <strong>git commit -m "modificaiones realizadas"</strong></li>
+      <li>Por ultimo subo mis archivos al repositorio de guitHub <br>
+      <strong>git push origin master</strong></li>
+    </ol>
+
+
    </article>
   </section>
 </body>
