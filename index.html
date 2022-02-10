@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+ <meta charset="utf-8">
+
+ <title>GIT HAT</title>
+ <style type="text/css">
+  @import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+  @import url('https://fonts.googleapis.com/css?family=Odibee+Sans&display=swap');
+
+  header{
+   font-family: 'Odibee Sans' ;
+
+  }
+  header img{
+   margin: 0 5%;
+  }
+  h1{
+   position: absolute;
+   margin: 0 20%;
+   color: black;
+   font-size: 5em;
+  }
+  body{
+   background: #312d31;
+   border:15px groove grey;
+   padding: 20px;
+   color: aquamarine;
+  }
+  article{
+   padding: 20px;
+    background: #312d31;
+  }
+  p{
+   font-family: 'Oswald';
+   font-size: 1.3em;
+   color: lightsteelblue;
+
+  }
+  h2{
+   color: whitesmoke;
+  }
+  strong{color: darkcyan}
+  .letraRojo{
+  	color: #df4949;
+  }
+ </style>
+</head>
+<body>
+  <header>
+   <h1>Aprender a usar Git </h1>
+   <div class="separator" style="clear: both; text-align: center;"><a href="https://4.bp.blogspot.com/-cnb5_pbry2g/Xl2ZPBKXmKI/AAAAAAAADjU/ZLIfiH8wDG4vFtoLbTfbwB0FwKstrjjhACLcBGAsYHQ/s1600/git.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="https://4.bp.blogspot.com/-cnb5_pbry2g/Xl2ZPBKXmKI/AAAAAAAADjU/ZLIfiH8wDG4vFtoLbTfbwB0FwKstrjjhACLcBGAsYHQ/s320/git.png" width="90%" height="300" data-original-width="350" data-original-height="350" /></a></div>
+   
+
+
+  </header>
+  <section>
+   <article>
+    
+   <h2>¿Que es Git?</h2>
+   <p>Git es un sistema de control de versiones que podemos utilizar para ir guardando las diferentes modificaciones que realizamos en nuestro código y en caso de error siempre poder regresas a una versión anterior. Un sistema de control de versiones nos permitirá que varios programadores trabajen al mismo tiempo y unifiquen su código en el mismo proyecto.</p>
+   <p><strong>Git no es un lenguaje de programación</strong>. Se compone de una serie de comandos que utilizaremos desde una terminal para realizar una serie de acciones sobre las versiones de nuestro programa (crear una versión, guardarla, borrarla...).</p>
+
+   </article>
+   <article>
+    <h2>¿Que un repositorio?</h2>
+
+    <p><strong>Es un espacio que dejamos para guardar nuestras actualizaciones.</strong> Cuando generamos un repositorio de forma automática git genera un grupo de carpetas y sub-carpetas donde almacenará la información de nuestro proyecto.</p>
+    <h2>¿Como podemos crear un repositorio desde git CMD?</h2>
+    <p>Abriremos la consola de git CMD y buscaremos la ruta donde deseamos dejar nuestro repositorio, para ello accederemos a la ruta utilizando el comando <strong>cd</strong> y la dirección donde deseamos dejar nuestro repositorio. ejemplo <strong style="color:#a577a5"><span class="letraRojo">cd</span> C:\wamp64\www\MisPaginasWeb\APUNTEShtml5</strong>. <br>
+    En el caso de que deseamos retroceder una carpeta introduciremos cd, dos puntos y la barra <strong>cd .. /  </strong>
+    <p>Otra opción más rápida es acceder a la carpeta donde queremos iniciar un repositorio dar al botón derecho de nuestro ratón y seleccionar <strong lang="en">Git Bash Here</strong>, con ellos abriremos la consola cmd en la ruta en la que nos encontramos. </p>
+    <p>Una vez hemos elegido la ruta donde alojar nuestro repositorio introduciremos el comando <strong>git init</strong>. de esta forma git generará una carpeta con nuestro proyecto. </p>
+    <h2>¿Que es un commit?</h2>
+    <p>Son las <strong>diferentes modificaciones o versiones de nuestro programa guardadas dentro de un repositorio</strong>. Cuando trabajamos en git <strong>tenemos que acostumbrarnos a dar un commit a cada tarea que estamos realizando</strong>. Imagina que te encuentras realizando modificaciones en tu menú, en este caso seria conveniente te guardaras un commit nombrado con las modificaciones.</p>
+    <p>Para realizar un commit introduciremos el comando <strong>git commit</strong>, en ese momento se habilitara una nueva pantalla en la que debemos introducir el texto en el que resumimos nuestras modificaciones. luego bajaremos al final e introduciremos el comando <strong>:wq</strong>.</p>
+    <p>Otra opción es incluir en el commit el comentario <strong>git commit -m "comentario de la actualización"</strong></p>
+  
+  </article>
+  <article>
+    <h2>Adjuntar un archivo en nuestro repositorio <strong>git add</strong></h2>
+    <p>
+      Podemos incluir uno o varios archivo en nuestro repositorio. Utilizaremos el comando <strong>git add "nombreArchivo.html" </strong> realizando un git add por cada archivo o realizar un <strong>git add *</strong> con lo que incluiríamos todos los archivos.
+    </p>
+  </article>
+   <article>
+   	<h2>¿Como podemos consultar histórico de commits realizados?</h2>
+   	<p>Cuando deseemos consultar los diferentes commits realizados sobre un repositorio utilizaremos el comando <strong>git log</strong> . </p>
+   </article>
+  </section>
+</body>
+</html>
